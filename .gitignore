@@ -21,3 +21,5 @@ WebClient/yarn-debug.log*
 WebClient/yarn-error.log*
 
 .directory
+.vscode/settings.json
+/environments
