@@ -1,6 +1,14 @@
 version: '3.3'
 
 services:
+  web:
+    build: ./WebClient/
+    command: yarn run start
+    volumes:
+      - './WebClient/src/:/usr/basket-app/src'
+    ports:
+      - "3000:3000"
+
   mongodb:
     image: mongo
     ports:

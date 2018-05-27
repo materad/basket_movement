@@ -48,6 +48,9 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/jest": "^22.2.3",
