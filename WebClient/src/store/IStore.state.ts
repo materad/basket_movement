@@ -1,5 +1,7 @@
-import { IMainPageState } from '../containers/MainPage/IMainPage.state';
+import { IMainViewportState } from '../containers/MainViewport/IMainViewport.state';
+import { INavigationState } from '../containers/Navigation/INavigation.state';
 
 export interface IStoreState {
-    mainPage: IMainPageState
+    mainPage: IMainViewportState;
+    navigation: INavigationState;
 }

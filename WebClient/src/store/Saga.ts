@@ -1,5 +1,5 @@
 import { all, fork } from 'redux-saga/effects';
-import { watchFetchFakeData } from '../containers/MainPage/MainPage.sagas';
+import { watchFetchFakeData } from '../containers/MainViewport/MainViewport.sagas';
 
 const sagas: any[] = [
   watchFetchFakeData

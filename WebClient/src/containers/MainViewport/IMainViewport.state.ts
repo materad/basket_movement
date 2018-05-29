@@ -1,4 +1,4 @@
-export interface IMainPageState {
+export interface IMainViewportState {
     val: number;
     fakeData: any;
 }
