@@ -1,9 +1,11 @@
 import { combineReducers, Reducer } from 'redux';
-import { mainPageReducer } from '../containers/MainPage/MainPage.reducer';
+import { mainViewportReducer } from '../containers/MainViewport/MainViewport.reducer';
+import { navigationReducer } from '../containers/Navigation/Navigation.reducer';
 import { IStoreState } from './IStore.state';
 
 const rootReducer: Reducer<IStoreState> = combineReducers({
-    mainPage: mainPageReducer
+    mainPage: mainViewportReducer,
+    navigation: navigationReducer
 });
 
 export default rootReducer;

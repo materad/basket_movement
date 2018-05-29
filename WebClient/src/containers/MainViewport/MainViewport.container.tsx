@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { connect, Dispatch } from 'react-redux';
 import { IStoreState } from '../../store/IStore.state';
-import { IMainPageProps } from './IMainPage.props';
-import { decrement, fetchFakeData, increment, MainPageActions, } from './MainPage.actions';
+import { IMainViewportProps } from './IMainViewport.props';
+import { decrement, fetchFakeData, increment, MainViewportActions, } from './MainViewport.actions';
 
-class MainPage extends React.Component<IMainPageProps, {}> {
+class MainViewport extends React.Component<IMainViewportProps, {}> {
     public render() {
         return (
             <div>
@@ -25,7 +25,7 @@ const mapStateToProps = (state: IStoreState) => {
     };
 };
 
-const mapDispatchToProps = (dispatch: Dispatch<MainPageActions>) => {
+const mapDispatchToProps = (dispatch: Dispatch<MainViewportActions>) => {
     return {
         onDecrement: () => dispatch(decrement()),
         onFetchFakeData: () => dispatch(fetchFakeData()),
@@ -33,4 +33,4 @@ const mapDispatchToProps = (dispatch: Dispatch<MainPageActions>) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainPage as any);
+export default connect(mapStateToProps, mapDispatchToProps)(MainViewport as any);

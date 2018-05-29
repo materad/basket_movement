@@ -1,0 +1,18 @@
+.sidenav {
+    background-color: #262626;
+    bottom: 0;
+    height: calc(100% - 50px);
+    left: 0;
+    overflow-x: hidden;
+    position: fixed;
+    width: 0;
+    z-index: 1;
+  }
+  
+  .sidenav__open {
+    width: 250px;
+  }
+  
+  .sidenav__close {
+    width: 0px;
+  }
