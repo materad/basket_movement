@@ -3,7 +3,7 @@ version: '3.3'
 services:
   web:
     build: ./WebClient/
-    command: yarn run start
+    command: yarn start
     volumes:
       - './WebClient/src/:/usr/basket-app/src'
     ports:
