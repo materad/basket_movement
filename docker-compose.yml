@@ -9,12 +9,20 @@ services:
     ports:
       - "3000:3000"
 
-  mongodb:
-    image: mongo
+  movement-service:
+    build: Services/Movement/
+    command: python src/app.py
+    volumes:
+        - './Services/Movement/src:/movement-service/src'
     ports:
+      - "5000:5000"
+
+  mongodb:
+    image: mongo 
+    ports: 
       - "27017:27017"
-  
-  mongodb-seed:
-    build: ./Services/Movement
+   
+  mongodb-seed: 
+    build: ./Data
     depends_on:
       - mongodb
